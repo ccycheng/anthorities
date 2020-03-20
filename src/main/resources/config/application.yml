@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/authon?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      #更新或创建数据库表结构
+      ddl-auto: update
+    #输出执行sql
+    show-sql: true
+
+jwt:
+  secret: secret
+  expiration: 7200000
+  token: Authorization
